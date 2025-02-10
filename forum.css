@@ -1,0 +1,308 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+#message, #header {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
+main {
+    overflow: auto;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar {
+    margin-left: 30px;
+    float: left;
+    height: 300px;
+    width: 65px;
+    background: #F5F5F5;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+}
+main::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #fcd9d9;
+}
+
+main::-webkit-scrollbar {
+    width: 6px;
+    background-color: #D62929;
+}
+
+main::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #D62929;
+    background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent, transparent)
+}
+
+
+/* Set a style for all buttons */
+#new_message {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 200px;
+}
+
+    #new_message:hover {
+        opacity: 0.8;
+    }
+
+
+.send_button {
+    padding: 25px 30px;
+    background-color: white;
+    color: #04AA6D;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+    width: 20%;
+}
+
+    .send_button:hover {
+        background: #04AA6D;
+        color: white;
+        box-shadow: 0 0 5px #04AA6D, 0 0 25px #04AA6D, 0 0 50px #04AA6D, 0 0 200px #04AA6D;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    }
+
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    color: #f44336;
+}
+
+    .cancelbtn:hover {
+        background: #f44336;
+        color: white;
+        box-shadow: 0 0 5px #f44336, 0 0 25px #f44336, 0 0 50px #f44336, 0 0 200px #f44336;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    }
+
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 20px;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+#message {
+    min-height: 200px;
+    overflow-y: auto;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: white;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: red;
+        cursor: pointer;
+    }
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+.message-container {
+    width: 60%;
+    margin: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.user-name {
+    text-align: right;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.message-details {
+    padding-right: 20px;
+    border-right: 2px solid #ccc;
+    overflow-y: hidden;
+}
+
+.message-title {
+    display: inline;
+    border-bottom: 2px solid #ccc;
+    font-size: 20px;
+    margin-bottom: 5px;
+    overflow-y: hidden;
+}
+
+.message-content {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    overflow-y: hidden;
+}
+
+    .message-content a {
+        color: #337ab7;
+        text-decoration: none;
+    }
+
+        .message-content a:hover {
+            text-decoration: underline;
+        }
+
+.message-container {
+    width: 60%;
+    margin: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.user-name {
+    text-align: right;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.message-details {
+    padding: 10px 20px;
+}
+
+.message-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.message-content {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+    .message-content a {
+        color: #337ab7;
+        text-decoration: none;
+    }
+
+        .message-content a:hover {
+            text-decoration: underline;
+        }
+h2 {
+    border-bottom: 1px dashed #ccc;
+}
+
+#new_message {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+    #new_message:hover {
+        background-color: #038c5a;
+    }
+    #error{
+        color:red;
+    }

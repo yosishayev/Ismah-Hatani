@@ -1,0 +1,157 @@
+﻿main {
+    background-image: url('BackGround_ring.jpg');
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    height: 100px;
+    background-color: #f9f9fa;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 100;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.logo {
+    height: 100px;
+    float: right;
+}
+
+.menu {
+    width: 90%;
+    float: left;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    margin-top: 25px;
+    font-size: 1.3em;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0px;
+}
+a{
+    color:black;
+}
+
+li {
+    height: 30px;
+    width: 230px;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+    font-weight: 400;
+    color: black;
+    border-left:1px solid gray;
+
+}
+
+    li ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        z-index: 1;
+        border: 2px solid #ff9480;
+    }
+
+    li:hover ul {
+        display: block;
+
+    }
+
+    li:hover {
+        font-weight: bold;
+    }
+
+
+    li ul li {
+        display: inline-block;
+        height: 30px;
+        background-color: floralwhite;
+        margin: 0;
+        padding: 0;
+    }
+
+.big-title {
+    width: 100%;
+    text-align: center;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    color: black;
+    letter-spacing: -2px;
+    font-size: 6rem;
+    -webkit-transform: scaleY(1.2);
+    -ms-transform: scale(1,1.2);
+    transform: scaleY(1.2);
+    margin-top: 110px;
+    z-index: -1;
+}
+.second-title {
+    font-size: 32px;
+    color: #373c49;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: normal;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+.logos{
+    height:50px;
+    width:50px;
+}
+a{
+    text-decoration:none;
+}
+    a:visited {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+    }
+#out {
+     display:none;
+     margin-right:20px;
+}
+#login_div {
+    display: inline-block;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight:400;
+}
+#form {
+    text-align:left;
+    float:left;
+}
+
+#mail {
+    text-decoration: underline;
+    color:blue;
+}
+video {
+    position:static;
+    bottom:0px;
+    right:50px;
+    width:100%;
+    height:auto;
+}
+iframe {
+    position: static;
+    bottom: 0px;
+    right: 50px;
+    width: 100%;
+    height: auto;
+}

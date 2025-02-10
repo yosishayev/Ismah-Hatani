@@ -1,0 +1,119 @@
+﻿/* StyleSheet.css */
+
+/* Global Styles */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main Content Styles */
+main {
+  flex: 1;
+  padding: 20px;
+}
+td {
+    height: 150px;
+    width: 150px;
+    text-align: center;
+}
+
+.tb {
+    margin: auto;
+    text-align: center;
+}
+
+table {
+    margin: auto;
+}
+
+.td-colored {
+    background-color: #ff9480;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+video {
+    position: static;
+    bottom: 0px;
+    right: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.logos {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+#details {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+#mail_form {
+  display: inline-block;
+  text-align: right;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+#mail_form h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#mail_form label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+    #mail_form input[type="text"],
+    #mail_form input[type="tel"],
+    #mail_form textarea {
+        width: 100%;
+        padding: 6px;
+        font-size: 14px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+#mail_form textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+#mail_form input[type="submit"] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#mail_form input[type="submit"]:hover {
+  opacity: 0.8;
+}
